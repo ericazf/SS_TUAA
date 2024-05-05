@@ -82,11 +82,10 @@ def fea_loss(adv_features, anchor_features):
 
 
 """
-Stability $\leftarrow$  PNI of anchor code & Fcl loss function
-
-$\downarrow$
-
-TUAA performance $\leftarrow$ Semantic-preserving ability of anchor code 
+Stability <-  PNI of anchor code & Fcl loss function
+|
+v
+TUAA performance <- Semantic-preserving ability of anchor code 
 """
 
 class TUAA_UAP(object):
