@@ -80,6 +80,15 @@ def fea_loss(adv_features, anchor_features):
         total_loss = total_loss + cos_loss
     return total_loss/len(adv_features)
 
+
+"""
+Stability $\leftarrow$  PNI of anchor code & Fcl loss function
+
+$\downarrow$
+
+TUAA performance $\leftarrow$ Semantic-preserving ability of anchor code 
+"""
+
 class TUAA_UAP(object):
     def __init__(self, target_labels):
         super(TUAA_UAP, self).__init__()
@@ -199,7 +208,7 @@ class TUAA_UAP(object):
     2) config["alpha"] = 0.5
     The benefit of the second loss function is that experiments show its superior TUAA performance.
     '''
-    
+
     def main(self, trainloader, num_train, testloader, num_test):
         self.load_anchor()
         UAP_records = torch.zeros(self.target_labels.size(0), 3, 224, 224)

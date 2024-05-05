@@ -1,14 +1,6 @@
 # SS-TUAA
 Official implementation of the ICASSP2024 paper: Exploring Targeted Universal Adversarial Attack for Deep Hashing
 
-
-Stability $\leftarrow$  PNI of anchor code & Fcl loss function
-
-$\downarrow$
-
-TUAA performance $\leftarrow$ Semantic-preserving ability of anchor code 
-
-
 ## Train
 
 #### Deep hashing models 
